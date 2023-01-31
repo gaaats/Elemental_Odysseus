@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gaaaaaa"
+    app:startDestination="@id/g1Fragment">
+
+    <fragment
+        android:id="@+id/g1Fragment"
+        android:name="com.miHoYo.Gensh.ggggaaaam.G1Fragment"
+        android:label="fragment_g1"
+        tools:layout="@layout/fragment_g1" >
+        <action
+            android:id="@+id/action_g1Fragment_to_g2Fragment"
+            app:destination="@id/g2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/g2Fragment"
+        android:name="com.miHoYo.Gensh.ggggaaaam.G2Fragment"
+        android:label="fragment_g2"
+        tools:layout="@layout/fragment_g2" />
+</navigation>

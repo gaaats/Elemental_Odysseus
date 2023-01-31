@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ammamaamama"
+    app:startDestination="@id/maaaainFragment">
+
+    <fragment
+        android:id="@+id/maaaainFragment"
+        android:name="com.miHoYo.Gensh.ffffrrraa.MaaaainFragment"
+        android:label="fragment_maaaain"
+        tools:layout="@layout/fragment_maaaain" >
+        <action
+            android:id="@+id/action_maaaainFragment_to_conCOnCOnFragment"
+            app:destination="@id/conCOnCOnFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/conCOnCOnFragment"
+        android:name="com.miHoYo.Gensh.ffffrrraa.ConCOnCOnFragment"
+        android:label="fragment_con_c_on_c_on"
+        tools:layout="@layout/fragment_con_c_on_c_on" >
+        <action
+            android:id="@+id/action_conCOnCOnFragment_to_secSecMainFragment"
+            app:destination="@id/secSecMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secSecMainFragment"
+        android:name="com.miHoYo.Gensh.ffffrrraa.SecSecMainFragment"
+        android:label="fragment_sec_sec_main"
+        tools:layout="@layout/fragment_sec_sec_main" >
+        <action
+            android:id="@+id/action_secSecMainFragment_to_priiiiiFFragment"
+            app:destination="@id/priiiiiFFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/priiiiiFFragment"
+        android:name="com.miHoYo.Gensh.ffffrrraa.PriiiiiFFragment"
+        android:label="fragment_priiiii_f"
+        tools:layout="@layout/fragment_priiiii_f" >
+        <action
+            android:id="@+id/action_priiiiiFFragment_to_kiiiiiiigoFragment"
+            app:destination="@id/kiiiiiiigoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kiiiiiiigoFragment"
+        android:name="com.miHoYo.Gensh.ffffrrraa.KiiiiiiigoFragment"
+        android:label="fragment_kiiiiiiigo"
+        tools:layout="@layout/fragment_kiiiiiiigo" />
+</navigation>

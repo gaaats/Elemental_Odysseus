@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Elemental Odysseus</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">1968270490231685</string>
+    <string name="facebook_client_token">fe381f7c6b8c02aa40575b66e54c6c1d</string>
+</resources>
