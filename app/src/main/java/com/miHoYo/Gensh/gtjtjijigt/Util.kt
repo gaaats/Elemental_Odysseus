@@ -22,7 +22,4 @@ object Util {
     val myIdgtgtgt: String = "myID"
     var instIdgttg: String? = "instID"
     var urlMaingttg: String = "link"
-
-
-
 }

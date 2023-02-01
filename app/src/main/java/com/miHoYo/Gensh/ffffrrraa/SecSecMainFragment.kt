@@ -19,7 +19,9 @@ import org.koin.core.qualifier.named
 
 
 class SecSecMainFragment : Fragment() {
-
+    private fun gthigthgtih() {
+        findNavController().navigate(R.id.action_secSecMainFragment_to_priiiiiFFragment)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -68,6 +70,12 @@ class SecSecMainFragment : Fragment() {
     }
 
     private fun hrfhirfhhrf() {
-        findNavController().navigate(R.id.action_secSecMainFragment_to_priiiiiFFragment)
+        ghtghihtihgt()
     }
+
+    private fun ghtghihtihgt() {
+        gthigthgtih()
+    }
+
+
 }

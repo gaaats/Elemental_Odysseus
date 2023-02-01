@@ -2,6 +2,7 @@ package com.miHoYo.Gensh.aapapapppipipi
 
 import androidx.annotation.Keep
 import com.google.gson.annotations.SerializedName
+import com.miHoYo.Gensh.aapapapppipipi.frjrrfjrf.CountryCodeJSgttggt
 import retrofit2.Response
 import retrofit2.http.GET
 
@@ -20,22 +21,10 @@ interface ApiInterfaceggtgtgt {
     suspend fun gttggjtjgt(): Response<CountryCodeJSgttggt>
 }
 
-interface HostInterfacegtgtgtgt {
-    @GET("typo.json")
-    suspend fun hhyhyhyhyhyhy(): Response<GeoDevgtgtgtgt>
-}
 
-class CountryRepogtgtgt(private val gtgtigtihgt: ApiInterfaceggtgtgt) {
-    suspend fun getDat() = gtgtigtihgt.gttggjtjgt()
-}
-class DevRepogttggt(private val ggtgthigtihgt: HostInterfacegtgtgtgt) {
-    suspend fun getDataDev() = ggtgthigtihgt.hhyhyhyhyhyhy()
-}
 
-@Keep
-data class CountryCodeJSgttggt(
-    @SerializedName("countryCode")
-    val gtgtigthgtihgt: String,
-)
+
+
+
 
 

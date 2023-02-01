@@ -42,6 +42,14 @@ class MaaaainFragment : Fragment() {
     }
 
     private fun rhhfrhfrhrfgyfrygfrg() {
+        ghgthigtitihgt()
+    }
+
+    private fun ghgthigtitihgt() {
+        hgtihgthigthgt()
+    }
+
+    private fun hgtihgthigthgt() {
         findNavController().navigate(R.id.action_maaaainFragment_to_conCOnCOnFragment)
     }
 }

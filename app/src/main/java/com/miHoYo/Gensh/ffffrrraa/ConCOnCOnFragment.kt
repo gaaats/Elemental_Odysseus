@@ -48,8 +48,12 @@ class ConCOnCOnFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        higthigtihgthgthgthgt()
+    }
+
+    private fun higthigtihgthgthgthgt() {
         gtjiogtjgtjijgt.countryCodegtgtgt.observe(viewLifecycleOwner) {
-            if (it!=null) {
+            if (it != null) {
                 country = it.gtgtigthgtihgt
                 gtjgtjogtjgti.edit().putString(geoCogtgtgt, country).apply()
                 gthigthihhigthigt()

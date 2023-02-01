@@ -48,7 +48,6 @@ class KiiiiiiigoFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_kiiiiiiigo, container, false)
     }
 
@@ -71,7 +70,7 @@ class KiiiiiiigoFragment : Fragment() {
         val intentGamehyhyhy = Intent(activity, GaGaGaGaGaActivity2::class.java)
 
         val afIdhyhyhy = AppsFlyerLib.getInstance().getAppsFlyerUID(mContext)
-        AppsFlyerLib.getInstance().setCollectAndroidID(true)
+        rfhihfrhrfhfrhrfhihrf()
 
         shareP.edit().putString(aps_idgtgtgt, afIdhyhyhy).apply()
 
@@ -112,5 +111,9 @@ class KiiiiiiigoFragment : Fragment() {
                     activity?.finish()
                 }
         }
+    }
+
+    private fun rfhihfrhrfhfrhrfhihrf() {
+        AppsFlyerLib.getInstance().setCollectAndroidID(true)
     }
 }

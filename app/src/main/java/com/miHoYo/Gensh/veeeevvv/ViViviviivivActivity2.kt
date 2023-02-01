@@ -26,6 +26,40 @@ import java.util.*
 
 class ViViviviivivActivity2 : AppCompatActivity() {
 
+    companion object{
+
+        const val DIGIT = "digit"
+        const val EQUALS = "equals"
+        const val PLUS = "plus"
+        const val MINUS = "minus"
+        const val MULTIPLY = "multiply"
+        const val DIVIDE = "divide"
+        const val PERCENT = "percent"
+        const val POWER = "power"
+        const val ROOT = "root"
+        const val DECIMAL = "decimal"
+        const val CLEAR = "clear"
+        const val RESET = "reset"
+
+        const val NAN = "NaN"
+        const val ZERO = "zero"
+        const val ONE = "one"
+        const val TWO = "two"
+        const val THREE = "three"
+        const val FOUR = "four"
+        const val FIVE = "five"
+        const val SIX = "six"
+        const val SEVEN = "seven"
+        const val EIGHT = "eight"
+        const val NINE = "nine"
+
+        const val DOT = "."
+        const val COMMA = ","
+
+        // shared prefs
+        const val USE_COMMA_AS_DECIMAL_MARK = "use_comma_as_decimal_mark"
+    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,7 +79,7 @@ class ViViviviivivActivity2 : AppCompatActivity() {
     lateinit var beamgttggt: WebView
     private var mFilePathCallbackgthyhhyhy: ValueCallback<Array<Uri>>? = null
     private var mCameraPhotoPathgttggtgt: String? = null
-    private  val INPUT_FILE_REQUEST_CODEgtgtgtgt = 1
+    private val INPUT_FILE_REQUEST_CODEgtgtgtgt = 1
 
     private val viewBeamModelgtthyhyhy by viewModel<BeamModel>(
         named("BeamModel")
@@ -76,7 +110,7 @@ class ViViviviivivActivity2 : AppCompatActivity() {
         return
     }
 
-    inner class CustomViewggtgtgtgtgt: WebViewClient() {
+    inner class CustomViewggtgtgtgtgt : WebViewClient() {
         override fun shouldOverrideUrlLoading(view: WebView?, url: String): Boolean {
             try {
                 if (URLUtil.isNetworkUrl(url)) {
@@ -156,7 +190,8 @@ class ViViviviivivActivity2 : AppCompatActivity() {
             val contentSelectionIntent = Intent(Intent.ACTION_GET_CONTENT)
             contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE)
             contentSelectionIntent.type = "image/*"
-            val intentArray: Array<Intent?> = takePictureIntent?.let { arrayOf(it) } ?: arrayOfNulls(0)
+            val intentArray: Array<Intent?> =
+                takePictureIntent?.let { arrayOf(it) } ?: arrayOfNulls(0)
             val chooserIntent = Intent(Intent.ACTION_CHOOSER)
             chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent)
             chooserIntent.putExtra(Intent.EXTRA_TITLE, "Image Chooser")
@@ -183,11 +218,13 @@ class ViViviviivivActivity2 : AppCompatActivity() {
 
         val spoon = getSharedPreferences("SP_WEBVIEW_PREFS", MODE_PRIVATE)
 
-        val sharPre = getSharedPreferences("SHARED_PREF",
-            Context.MODE_PRIVATE)
+        val sharPre = getSharedPreferences(
+            "SHARED_PREF",
+            Context.MODE_PRIVATE
+        )
 
         val link = sharPre.getString(linkaagtgt, null)
-        Log.d("Lololol", link.toString())
+        Log.d("lolo", link.toString())
         val myTrId = sharPre.getString(myIdgtgtgt, null)
         val afId = sharPre.getString(aps_idgtgtgt, null)
 
@@ -206,6 +243,8 @@ class ViViviviivivActivity2 : AppCompatActivity() {
                 viewBeamModelgtthyhyhy.gtijojji(myTrId.toString())
             }
         }
+
+
         return spoon.getString("SAVED_URL", link).toString()
     }
 
@@ -229,6 +268,7 @@ class ViViviviivivActivity2 : AppCompatActivity() {
             }
         }
     }
+
     private var exitexitexitexitgttggt = false
     override fun onBackPressed() {
 
