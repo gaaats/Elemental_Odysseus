@@ -6,11 +6,11 @@ import android.content.SharedPreferences
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.miHoYo.Gensh.aapapapppipipi.ApiInterfaceggtgtgt
-import com.miHoYo.Gensh.aapapapppipipi.CountryRepogtgtgt
-import com.miHoYo.Gensh.aapapapppipipi.DevRepogttggt
+import com.miHoYo.Gensh.aapapapppipipi.JOIFJirjrfjjrfjirf
+import com.miHoYo.Gensh.aapapapppipipi.IUHFhrhhrfuhhrf
 import com.miHoYo.Gensh.aapapapppipipi.HostInterfacegtgtgtgt
-import com.miHoYo.Gensh.frgtgtgtgt.BeamModel
-import com.miHoYo.Gensh.jgthigihgt.ViMod
+import com.miHoYo.Gensh.frgtgtgtgt.Gygfrgygrfrfrf
+import com.miHoYo.Gensh.jgthigihgt.HIUfhrfhhfrhrfhrhfurf
 import org.koin.android.ext.koin.androidApplication
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.core.qualifier.named
@@ -21,10 +21,10 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 val viewModelModulegtgtgtgt = module {
     viewModel (named("MainModel")){
-        ViMod((get(named("CountryRep"))), get(named("DevRep")), get(named("SharedPreferences")), get())
+        HIUfhrfhhfrhrfhrhfurf((get(named("CountryRep"))), get(named("DevRep")), get(named("SharedPreferences")), get())
     }
     viewModel(named("BeamModel")) {
-        BeamModel(get())
+        Gygfrgygrfrfrf(get())
     }
 }
 
@@ -53,11 +53,11 @@ val appModulegtgtgtgt = module {
     }
 
     factory (named("CountryRep")) {
-        CountryRepogtgtgt(get(named("ApiInter")))
+        JOIFJirjrfjjrfjirf(get(named("ApiInter")))
     }
 
     factory  (named("DevRep")){
-        DevRepogttggt(get(named("HostInter")))
+        IUHFhrhhrfuhhrf(get(named("HostInter")))
     }
     single{
         provideGsongtgtgtgt()

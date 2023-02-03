@@ -3,34 +3,30 @@ package com.miHoYo.Gensh.jgthigihgt
 import android.app.Application
 import android.content.Context
 import android.content.SharedPreferences
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.appsflyer.AFInAppEventParameterName
 import com.appsflyer.AppsFlyerConversionListener
 import com.appsflyer.AppsFlyerLib
 import com.facebook.applinks.AppLinkData
 import com.google.android.gms.ads.identifier.AdvertisingIdClient
-import com.miHoYo.Gensh.aapapapppipipi.CountryRepogtgtgt
-import com.miHoYo.Gensh.aapapapppipipi.DevRepogttggt
 import com.miHoYo.Gensh.aapapapppipipi.GeoDevgtgtgtgt
-import com.miHoYo.Gensh.aapapapppipipi.frjrrfjrf.CountryCodeJSgttggt
-import com.miHoYo.Gensh.gtjtjijigt.Util.aaaaappspspspgtgt
-import io.branch.referral.util.BRANCH_STANDARD_EVENT
-import io.branch.referral.util.BranchEvent
+import com.miHoYo.Gensh.aapapapppipipi.IUHFhrhhrfuhhrf
+import com.miHoYo.Gensh.aapapapppipipi.JOIFJirjrfjjrfjirf
+import com.miHoYo.Gensh.aapapapppipipi.frjrrfjrf.Hfrhhfhrfhrfhrf
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.gtjjgtjgtjgtjt
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 
-class ViMod(
+class HIUfhrfhhfrhrfhrhfurf(
 
 
-    private val mainRepositorygtgtgthyh: CountryRepogtgtgt,
-    private val gtgtgthyhy: DevRepogttggt,
+    private val gtgthtghiugth: JOIFJirjrfjjrfjirf,
+    private val gtgtgthyhy: IUHFhrhhrfuhhrf,
     private val gtgtgtgt: SharedPreferences,
-    val applicationgttghyhy: Application
+    val gtgtuihgiuthugti: Application
 ) : ViewModel() {
 
     init {
@@ -42,8 +38,8 @@ class ViMod(
         }
     }
 
-    private val gthgtiugt = MutableLiveData<CountryCodeJSgttggt>()
-    val countryCodegtgtgt: LiveData<CountryCodeJSgttggt>
+    private val gthgtiugt = MutableLiveData<Hfrhhfhrfhrfhrf>()
+    val nknvngthutghih: LiveData<Hfrhhfhrfhrfhrf>
         get() = gthgtiugt
 
     private val tgggtgt = MutableLiveData<GeoDevgtgtgtgt>()
@@ -60,7 +56,7 @@ class ViMod(
 
 
     suspend fun hgithgtuhgt() {
-        gthgtiugt.postValue(mainRepositorygtgtgthyh.getDat().body())
+        gthgtiugt.postValue(gtgthtghiugth.getDat().body())
         gttgtgtgt()
     }
 
@@ -70,7 +66,7 @@ class ViMod(
 
     fun gtthyhyhy(cont: Context) {
         AppsFlyerLib.getInstance()
-            .init(aaaaappspspspgtgt, conversionDataListenergttghyhy, applicationgttghyhy)
+            .init(gtjjgtjgtjgtjt, conversionDataListenergttghyhy, gtgtuihgiuthugti)
         AppsFlyerLib.getInstance().start(cont)
     }
 
@@ -90,34 +86,6 @@ class ViMod(
             val dataGotten = data?.get("campaign").toString()
             gtjtgjoigtjgt.postValue(dataGotten)
 
-            when (data?.get(AFInAppEventParameterName.AF_CHANNEL).toString()) {
-                "ACI_Search" -> {
-                    BranchEvent(BRANCH_STANDARD_EVENT.ACHIEVE_LEVEL).setDescription("ACI_Search")
-                        .logEvent(applicationgttghyhy.applicationContext)
-
-                }
-                "ACI_Youtube" -> {
-                    BranchEvent(BRANCH_STANDARD_EVENT.SHARE).setDescription("ACI_Youtube")
-                        .logEvent(applicationgttghyhy.applicationContext)
-
-
-                }
-                "ACI_Display" -> {
-                    BranchEvent(BRANCH_STANDARD_EVENT.RATE).setDescription("ACI_Display")
-                        .logEvent(applicationgttghyhy.applicationContext)
-
-                }
-
-                else -> {
-
-
-                    BranchEvent(BRANCH_STANDARD_EVENT.VIEW_AD).setDescription("NoChannel")
-                        .logEvent(applicationgttghyhy.applicationContext)
-                    Log.d("Branch Check", "I'm here, branch bitch! No source though")
-                }
-
-            }
-
         }
 
         override fun onConversionDataFail(error: String?) {
@@ -132,7 +100,7 @@ class ViMod(
 
 
     fun gthuigthgt() {
-        val advertisingIdClient = AdvertisingIdClient(applicationgttghyhy)
+        val advertisingIdClient = AdvertisingIdClient(gtgtuihgiuthugti)
         advertisingIdClient.start()
         val idUserAdvertising = advertisingIdClient.info.id.toString()
         _mainIdgttggthy.postValue(idUserAdvertising)

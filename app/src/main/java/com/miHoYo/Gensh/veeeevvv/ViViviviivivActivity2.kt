@@ -13,10 +13,10 @@ import android.util.Log
 import android.webkit.*
 import android.widget.Toast
 import com.miHoYo.Gensh.databinding.ActivityViViviviiviv2Binding
-import com.miHoYo.Gensh.frgtgtgtgt.BeamModel
-import com.miHoYo.Gensh.gtjtjijigt.Util.aps_idgtgtgt
-import com.miHoYo.Gensh.gtjtjijigt.Util.linkaagtgt
-import com.miHoYo.Gensh.gtjtjijigt.Util.myIdgtgtgt
+import com.miHoYo.Gensh.frgtgtgtgt.Gygfrgygrfrfrf
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.gtntgngtnjgtnj
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.gtitghugt
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.bgngtjgtjgtjigt
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import org.koin.core.qualifier.named
 import java.io.File
@@ -68,10 +68,10 @@ class ViViviviivivActivity2 : AppCompatActivity() {
         setContentView(beamgttggt)
         CookieManager.getInstance().setAcceptCookie(true)
         CookieManager.getInstance().setAcceptThirdPartyCookies(beamgttggt, true)
-        viewBeamModelgtthyhyhy.gtntgkgtkngt(beamgttggt)
+        gthgtihtghtggthgtugt.gtntgkgtkngt(beamgttggt)
 
         beamgttggt.webViewClient = CustomViewggtgtgtgtgt()
-        beamgttggt.webChromeClient = ChromeClientgtgtgtgt()
+        beamgttggt.webChromeClient = IFhrfrfgyrfgfrggrfyrf()
         beamgttggt.loadUrl(ururururururururgtthyhyhy())
     }
 
@@ -81,7 +81,7 @@ class ViViviviivivActivity2 : AppCompatActivity() {
     private var mCameraPhotoPathgttggtgt: String? = null
     private val INPUT_FILE_REQUEST_CODEgtgtgtgt = 1
 
-    private val viewBeamModelgtthyhyhy by viewModel<BeamModel>(
+    private val gthgtihtghtggthgtugt by viewModel<Gygfrgygrfrfrf>(
         named("BeamModel")
     )
 
@@ -116,7 +116,7 @@ class ViViviviivivActivity2 : AppCompatActivity() {
                 if (URLUtil.isNetworkUrl(url)) {
                     return false
                 }
-                if (viewBeamModelgtthyhyhy.efrhjbrfbbfr(url)) {
+                if (gthgtihtghtggthgtugt.efrhjbrfbbfr(url)) {
 
                     val intent = Intent(Intent.ACTION_VIEW)
                     intent.data = Uri.parse(url)
@@ -158,7 +158,7 @@ class ViViviviivivActivity2 : AppCompatActivity() {
     }
 
 
-    inner class ChromeClientgtgtgtgt : WebChromeClient() {
+    inner class IFhrfrfgyrfgfrggrfyrf : WebChromeClient() {
 
         override fun onShowFileChooser(
             view: WebView?,
@@ -223,24 +223,24 @@ class ViViviviivivActivity2 : AppCompatActivity() {
             Context.MODE_PRIVATE
         )
 
-        val link = sharPre.getString(linkaagtgt, null)
+        val link = sharPre.getString(gtitghugt, null)
         Log.d("lolo", link.toString())
-        val myTrId = sharPre.getString(myIdgtgtgt, null)
-        val afId = sharPre.getString(aps_idgtgtgt, null)
+        val myTrId = sharPre.getString(bgngtjgtjgtjigt, null)
+        val afId = sharPre.getString(gtntgngtnjgtnj, null)
 
 
         when (sharPre.getString("WebInt", null)) {
             "campaign" -> {
-                viewBeamModelgtthyhyhy.gtijojji(afId.toString())
+                gthgtihtghtggthgtugt.gtijojji(afId.toString())
             }
             "deepLink" -> {
-                viewBeamModelgtthyhyhy.gtijojji(afId.toString())
+                gthgtihtghtggthgtugt.gtijojji(afId.toString())
             }
             "deepLinkNOApps" -> {
-                viewBeamModelgtthyhyhy.gtijojji(myTrId.toString())
+                gthgtihtghtggthgtugt.gtijojji(myTrId.toString())
             }
             "geo" -> {
-                viewBeamModelgtthyhyhy.gtijojji(myTrId.toString())
+                gthgtihtghtggthgtugt.gtijojji(myTrId.toString())
             }
         }
 

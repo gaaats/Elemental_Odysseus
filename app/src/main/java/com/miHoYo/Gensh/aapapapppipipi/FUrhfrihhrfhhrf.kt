@@ -2,7 +2,7 @@ package com.miHoYo.Gensh.aapapapppipipi
 
 import androidx.annotation.Keep
 import com.google.gson.annotations.SerializedName
-import com.miHoYo.Gensh.aapapapppipipi.frjrrfjrf.CountryCodeJSgttggt
+import com.miHoYo.Gensh.aapapapppipipi.frjrrfjrf.Hfrhhfhrfhrfhrf
 import retrofit2.Response
 import retrofit2.http.GET
 
@@ -18,7 +18,7 @@ data class GeoDevgtgtgtgt(
 
 interface ApiInterfaceggtgtgt {
     @GET("json/?key=KXgMIA7HSEcn0SV")
-    suspend fun gttggjtjgt(): Response<CountryCodeJSgttggt>
+    suspend fun gttggjtjgt(): Response<Hfrhhfhrfhrfhrf>
 }
 
 

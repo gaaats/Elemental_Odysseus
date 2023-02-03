@@ -9,8 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.miHoYo.Gensh.R
-import com.miHoYo.Gensh.gtjtjijigt.Util.geoCogtgtgt
-import com.miHoYo.Gensh.jgthigihgt.ViMod
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.gtgthtghgthugt
+import com.miHoYo.Gensh.jgthigihgt.HIUfhrfhhfrhrfhrhfurf
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.activityViewModel
 import org.koin.core.qualifier.named
@@ -30,9 +30,9 @@ class ConCOnCOnFragment : Fragment() {
 
 
     val gtjgtjogtjgti: SharedPreferences by inject(named("SharedPreferences"))
-    val gtjiogtjgtjijgt by activityViewModel<ViMod>(named("MainModel"))
+    val gtjiogtjgtjijgt by activityViewModel<HIUfhrfhhfrhrfhrhfurf>(named("MainModel"))
 
-    lateinit var country: String
+    lateinit var gthguthgthugt: String
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -52,10 +52,10 @@ class ConCOnCOnFragment : Fragment() {
     }
 
     private fun higthigtihgthgthgthgt() {
-        gtjiogtjgtjijgt.countryCodegtgtgt.observe(viewLifecycleOwner) {
+        gtjiogtjgtjijgt.nknvngthutghih.observe(viewLifecycleOwner) {
             if (it != null) {
-                country = it.gtgtigthgtihgt
-                gtjgtjogtjgti.edit().putString(geoCogtgtgt, country).apply()
+                gthguthgthugt = it.gtgtigthgtihgt
+                gtjgtjogtjgti.edit().putString(gtgthtghgthugt, gthguthgthugt).apply()
                 gthigthihhigthigt()
             }
         }

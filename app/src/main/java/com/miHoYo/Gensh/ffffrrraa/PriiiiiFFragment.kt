@@ -9,8 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.miHoYo.Gensh.R
-import com.miHoYo.Gensh.gtjtjijigt.Util.appsgtgtgt
-import com.miHoYo.Gensh.jgthigihgt.ViMod
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.nhyjiohyiohy5
+import com.miHoYo.Gensh.jgthigihgt.HIUfhrfhhfrhrfhrhfurf
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.activityViewModel
 import org.koin.core.qualifier.named
@@ -35,15 +35,15 @@ class PriiiiiFFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val gttggtgt = sharePgtgtgt.getString(appsgtgtgt, null)
+        val gttggtgt = sharePgtgtgt.getString(nhyjiohyiohy5, null)
         val hyhyhyhyhy = sharePgtgtgt.getString("appCamp", null)
 
         if (gttggtgt=="1" &&hyhyhyhyhy == null) {
-            viewMainModelgtgt.gtthyhyhy(mContextgtgtgt)
-            viewMainModelgtgt.appsData.observe(viewLifecycleOwner) {
+            gthgtgthuggt.gtthyhyhy(mContextgtgtgt)
+            gthgtgthuggt.appsData.observe(viewLifecycleOwner) {
                 if (it != null) {
-                    appCampgtgtgtgt = it.toString()
-                    sharePgtgtgt.edit().putString("appCamp", appCampgtgtgtgt).apply()
+                    gtgthigthgthugt = it.toString()
+                    sharePgtgtgt.edit().putString("appCamp", gtgthigthgthugt).apply()
                     findNavController().navigate(R.id.action_priiiiiFFragment_to_kiiiiiiigoFragment)
                 }
             }
@@ -52,9 +52,9 @@ class PriiiiiFFragment : Fragment() {
         }
     }
 
-    val viewMainModelgtgt by activityViewModel<ViMod>(named("MainModel"))
+    val gthgtgthuggt by activityViewModel<HIUfhrfhhfrhrfhrhfurf>(named("MainModel"))
     val sharePgtgtgt: SharedPreferences by inject(named("SharedPreferences"))
-    lateinit var appCampgtgtgtgt: String
+    lateinit var gtgthigthgthugt: String
     private lateinit var mContextgtgtgt: Context
 
 }

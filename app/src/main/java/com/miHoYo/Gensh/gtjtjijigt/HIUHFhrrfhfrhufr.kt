@@ -1,0 +1,25 @@
+package com.miHoYo.Gensh.gtjtjijigt
+
+object HIUHFhrrfhfrhufr {
+    var gtitghugt: String = "link"
+    var nhyjiohyiohy5: String = "apps"
+    var gtntgngtnjgtnj: String? = "main_id"
+    val rjgtjogtjjgtjtgjjgt = "tdb2"
+    val gtgthtghgthugt: String = "country"
+    val codeCodegtgt: String = "uff"
+    val onegtgt = "deviceID="
+    val vbfbbrfgfrggrffr = "sub_id_1="
+    val vfbhbfryurfgrfrf = "ad_id="
+    val gthgthugtuugthugt = "sub_id_4="
+    val vbfbfrrfhrfhfrhfrfr = "sub_id_5="
+    val subSixgttghy = "sub_id_6="
+    val nammgttg = "naming"
+    val trolologttggt = "deeporg"
+    const val vfbrfgfrgrfgrfgyrfgy = "7314f634-c885-430d-8388-33f137795982"
+    val bngjgtitghgtg = "43338858065812887804"
+    val bnyojijhyjjhyhy = "com.miHoYo.Gensh"
+    val gtjjgtjgtjgtjt = "yqYY6AYxkVciEBrEaPYEeB"
+    val bgngtjgtjgtjigt: String = "myID"
+    var instIdgttg: String? = "instID"
+    var bngjgthgthtghgt: String = "link"
+}

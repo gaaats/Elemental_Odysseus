@@ -9,10 +9,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.miHoYo.Gensh.R
-import com.miHoYo.Gensh.gtjtjijigt.Util
-import com.miHoYo.Gensh.gtjtjijigt.Util.codeCodegtgt
-import com.miHoYo.Gensh.gtjtjijigt.Util.urlMaingttg
-import com.miHoYo.Gensh.jgthigihgt.ViMod
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.codeCodegtgt
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.bngjgthgthtghgt
+import com.miHoYo.Gensh.jgthigihgt.HIUfhrfhhfrhrfhrhfurf
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.activityViewModel
 import org.koin.core.qualifier.named
@@ -30,7 +30,7 @@ class SecSecMainFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_sec_sec_main, container, false)
     }
 
-    val gtgtgtgt by activityViewModel<ViMod>(named("MainModel"))
+    val gtgtgtgt by activityViewModel<HIUfhrfhhfrhrfhrhfurf>(named("MainModel"))
     lateinit var countryDevgtgtgt: String
     lateinit var wvgtgttggt: String
     lateinit var appsgttggtgt: String
@@ -61,8 +61,8 @@ class SecSecMainFragment : Fragment() {
                 wvgtgttggt = it.gtmgtgtjjtgigtj
 
                 sharePgtgtgt.edit().putString(codeCodegtgt, countryDevgtgtgt).apply()
-                sharePgtgtgt.edit().putString(Util.appsgtgtgt, appsgttggtgt).apply()
-                sharePgtgtgt.edit().putString(urlMaingttg, wvgtgttggt).apply()
+                sharePgtgtgt.edit().putString(HIUHFhrrfhfrhufr.nhyjiohyiohy5, appsgttggtgt).apply()
+                sharePgtgtgt.edit().putString(bngjgthgthtghgt, wvgtgttggt).apply()
 
                 hrfhirfhhrf()
             }

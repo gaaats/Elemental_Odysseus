@@ -12,24 +12,24 @@ import android.view.ViewGroup
 import com.appsflyer.AppsFlyerLib
 import com.miHoYo.Gensh.R
 import com.miHoYo.Gensh.ggggaaaam.GaGaGaGaGaActivity2
-import com.miHoYo.Gensh.gtjtjijigt.Util.ad_idgtgtgt
-import com.miHoYo.Gensh.gtjtjijigt.Util.appsgtgtgt
-import com.miHoYo.Gensh.gtjtjijigt.Util.aps_idgtgtgt
-import com.miHoYo.Gensh.gtjtjijigt.Util.codeCodegtgt
-import com.miHoYo.Gensh.gtjtjijigt.Util.geoCogtgtgt
-import com.miHoYo.Gensh.gtjtjijigt.Util.instIdgttg
-import com.miHoYo.Gensh.gtjtjijigt.Util.keyVAlgtgtgt
-import com.miHoYo.Gensh.gtjtjijigt.Util.linkaagtgt
-import com.miHoYo.Gensh.gtjtjijigt.Util.myIdgtgtgt
-import com.miHoYo.Gensh.gtjtjijigt.Util.nammgttg
-import com.miHoYo.Gensh.gtjtjijigt.Util.onegtgt
-import com.miHoYo.Gensh.gtjtjijigt.Util.paaaaaacckckckgtgt
-import com.miHoYo.Gensh.gtjtjijigt.Util.subFivegtgttg
-import com.miHoYo.Gensh.gtjtjijigt.Util.subFourgtgtgt
-import com.miHoYo.Gensh.gtjtjijigt.Util.subOnegtgtgt
-import com.miHoYo.Gensh.gtjtjijigt.Util.subSixgttghy
-import com.miHoYo.Gensh.gtjtjijigt.Util.trolologttggt
-import com.miHoYo.Gensh.gtjtjijigt.Util.urlMaingttg
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.vfbhbfryurfgrfrf
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.nhyjiohyiohy5
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.gtntgngtnjgtnj
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.codeCodegtgt
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.gtgthtghgthugt
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.instIdgttg
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.rjgtjogtjjgtjtgjjgt
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.gtitghugt
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.bgngtjgtjgtjigt
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.nammgttg
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.onegtgt
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.bnyojijhyjjhyhy
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.vbfbfrrfhrfhfrhfrfr
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.gthgthugtuugthugt
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.vbfbbrfgfrggrffr
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.subSixgttghy
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.trolologttggt
+import com.miHoYo.Gensh.gtjtjijigt.HIUHFhrrfhfrhufr.bngjgthgthtghgt
 import com.miHoYo.Gensh.veeeevvv.ViViviviivivActivity2
 import org.koin.android.ext.android.inject
 import org.koin.core.qualifier.named
@@ -53,61 +53,61 @@ class KiiiiiiigoFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val gjgtojgt = shareP.getString(geoCogtgtgt, null)
-        val appCampgttg = shareP.getString("appCamp", null)
-        val mainIdgtgtgt = shareP.getString("mainId", null)
-        val packgtgtgt = paaaaaacckckckgtgt
-        val buildVersgtgtgt = Build.VERSION.RELEASE
-        val myTrIdgtgtgt = shareP.getString(myIdgtgtgt, null)
+        val gjgtojgt = shareP.getString(gtgthtghgthugt, null)
+        val gthgtigthgthgt = bnyojijhyjjhyhy
+        val gtojigtjtgjgtjigtj = Build.VERSION.RELEASE
+        val cdvdetfedfedffedfed = shareP.getString(bgngtjgtjgtjigt, null)
+        val gthutguhugthgtgtgt = shareP.getString("appCamp", null)
+        val bngngughgthugt = shareP.getString("mainId", null)
         val gtgtgt: String? = shareP.getString(instIdgttg, null)
-        val deepStgtgt = shareP.getString("deepSt", null)
-        val countryDevgttg = shareP.getString(codeCodegtgt, null)
-        val appsgtgtgt = shareP.getString(appsgtgtgt, null)
-        val wvgtgt = shareP.getString(urlMaingttg, null)
+        val bgnbnbgnbguhbghg = shareP.getString("deepSt", null)
+        val hjoihhfrfrgfrrg = shareP.getString(codeCodegtgt, null)
+        val hihfhgtgthgt = shareP.getString(nhyjiohyiohy5, null)
+        val vbffrygfrrfgrfg = shareP.getString(bngjgthgthtghgt, null)
 
 
-        val gtgthyujjuuj = Intent(activity, ViViviviivivActivity2::class.java)
-        val intentGamehyhyhy = Intent(activity, GaGaGaGaGaActivity2::class.java)
+        val fhrirfurfuhrf = Intent(activity, ViViviviivivActivity2::class.java)
+        val vfbfryrfgfrgfgrgfrrfrf = Intent(activity, GaGaGaGaGaActivity2::class.java)
 
         val afIdhyhyhy = AppsFlyerLib.getInstance().getAppsFlyerUID(mContext)
         rfhihfrhrfhfrhrfhihrf()
 
-        shareP.edit().putString(aps_idgtgtgt, afIdhyhyhy).apply()
+        shareP.edit().putString(gtntgngtnjgtnj, afIdhyhyhy).apply()
 
-        val linkAppsgttgtg = "$wvgtgt$subOnegtgtgt$appCampgttg&$onegtgt$afIdhyhyhy&$ad_idgtgtgt$mainIdgtgtgt&$subFourgtgtgt$packgtgtgt&$subFivegtgttg$buildVersgtgtgt&$subSixgttghy$nammgttg"
-        val linkMTgtgt = "$wvgtgt$onegtgt$myTrIdgtgtgt&$ad_idgtgtgt$gtgtgt&$subFourgtgtgt$packgtgtgt&$subFivegtgttg$buildVersgtgtgt&$subSixgttghy$nammgttg"
-        val linkFBgtgt = "$wvgtgt$subOnegtgtgt$deepStgtgt&$onegtgt$afIdhyhyhy&$ad_idgtgtgt$mainIdgtgtgt&$subFourgtgtgt$packgtgtgt&$subFivegtgttg$buildVersgtgtgt&$subSixgttghy$trolologttggt"
-        val linkFBNullAppsgthyyhhy = "$wvgtgt$subOnegtgtgt$deepStgtgt&$onegtgt$myTrIdgtgtgt&$ad_idgtgtgt$gtgtgt&$subFourgtgtgt$packgtgtgt&$subFivegtgttg$buildVersgtgtgt&$subSixgttghy$trolologttggt"
+        val gngnufhhth = "$vbffrygfrrfgrfg$vbfbbrfgfrggrffr$gthutguhugthgtgtgt&$onegtgt$afIdhyhyhy&$vfbhbfryurfgrfrf$bngngughgthugt&$gthgthugtuugthugt$gthgtigthgthgt&$vbfbfrrfhrfhfrhfrfr$gtojigtjtgjgtjigtj&$subSixgttghy$nammgttg"
+        val cdvedtdeffdeed = "$vbffrygfrrfgrfg$onegtgt$cdvdetfedfedffedfed&$vfbhbfryurfgrfrf$gtgtgt&$gthgthugtuugthugt$gthgtigthgthgt&$vbfbfrrfhrfhfrhfrfr$gtojigtjtgjgtjigtj&$subSixgttghy$nammgttg"
+        val vbyrfgrfrfg = "$vbffrygfrrfgrfg$vbfbbrfgfrggrffr$bgnbnbgnbguhbghg&$onegtgt$afIdhyhyhy&$vfbhbfryurfgrfrf$bngngughgthugt&$gthgthugtuugthugt$gthgtigthgthgt&$vbfbfrrfhrfhfrhfrfr$gtojigtjtgjgtjigtj&$subSixgttghy$trolologttggt"
+        val bmgjhyjhyjojihy = "$vbffrygfrrfgrfg$vbfbbrfgfrggrffr$bgnbnbgnbguhbghg&$onegtgt$cdvdetfedfedffedfed&$vfbhbfryurfgrfrf$gtgtgt&$gthgthugtuugthugt$gthgtigthgthgt&$vbfbfrrfhrfhfrhfrfr$gtojigtjtgjgtjigtj&$subSixgttghy$trolologttggt"
 
-        when(appsgtgtgt) {
+        when(hihfhgtgthgt) {
             "1" ->
-                if(appCampgttg!!.contains(keyVAlgtgtgt)) {
-                    shareP.edit().putString(linkaagtgt, linkAppsgttgtg).apply()
+                if(gthutguhugthgtgtgt!!.contains(rjgtjogtjjgtjtgjjgt)) {
+                    shareP.edit().putString(gtitghugt, gngnufhhth).apply()
                     shareP.edit().putString("WebInt", "campaign").apply()
-                    startActivity(gtgthyujjuuj)
+                    startActivity(fhrirfurfuhrf)
                     activity?.finish()
-                } else if (deepStgtgt!=null||countryDevgttg!!.contains(gjgtojgt.toString())) {
-                    shareP.edit().putString(linkaagtgt, linkFBgtgt).apply()
+                } else if (bgnbnbgnbguhbghg!=null||hjoihhfrfrgfrrg!!.contains(gjgtojgt.toString())) {
+                    shareP.edit().putString(gtitghugt, vbyrfgrfrfg).apply()
                     shareP.edit().putString("WebInt", "deepLink").apply()
-                    startActivity(gtgthyujjuuj)
+                    startActivity(fhrirfurfuhrf)
                     activity?.finish()
                 } else {
-                    startActivity(intentGamehyhyhy)
+                    startActivity(vfbfryrfgfrgfgrgfrrfrf)
                     activity?.finish()
                 }
             "0" ->
-                if(deepStgtgt!=null) {
-                    shareP.edit().putString(linkaagtgt, linkFBNullAppsgthyyhhy).apply()
+                if(bgnbnbgnbguhbghg!=null) {
+                    shareP.edit().putString(gtitghugt, bmgjhyjhyjojihy).apply()
                     shareP.edit().putString("WebInt", "deepLinkNOApps").apply()
-                    startActivity(gtgthyujjuuj)
+                    startActivity(fhrirfurfuhrf)
                     activity?.finish()
-                } else if (countryDevgttg!!.contains(gjgtojgt.toString())) {
-                    shareP.edit().putString(linkaagtgt, linkMTgtgt).apply()
+                } else if (hjoihhfrfrgfrrg!!.contains(gjgtojgt.toString())) {
+                    shareP.edit().putString(gtitghugt, cdvedtdeffdeed).apply()
                     shareP.edit().putString("WebInt", "geo").apply()
-                    startActivity(gtgthyujjuuj)
+                    startActivity(fhrirfurfuhrf)
                     activity?.finish()
                 } else {
-                    startActivity(intentGamehyhyhy)
+                    startActivity(vfbfryrfgfrgfgrgfrrfrf)
                     activity?.finish()
                 }
         }

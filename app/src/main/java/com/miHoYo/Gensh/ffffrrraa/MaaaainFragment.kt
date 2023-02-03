@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.miHoYo.Gensh.R
-import com.miHoYo.Gensh.jgthigihgt.ViMod
+import com.miHoYo.Gensh.jgthigihgt.HIUfhrfhhfrhrfhrhfurf
 import org.koin.androidx.viewmodel.ext.android.activityViewModel
 import org.koin.core.qualifier.named
 
@@ -26,7 +26,7 @@ class MaaaainFragment : Fragment() {
     private lateinit var hyhyhyhy: Context
 
 
-    val hyhyhyhyhy by activityViewModel<ViMod>(named("MainModel"))
+    val hyhyhyhyhy by activityViewModel<HIUfhrfhhfrhrfhrhfurf>(named("MainModel"))
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
